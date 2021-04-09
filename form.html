@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+    <style>
+   html, body { height:100%; margin:0px; }
+   </style>
+  </head>
+  <body bgcolor=FF9999>
+    <form method="post" action="mailto:yevheny.nagorny@gmail.com" enctype="text/plain">
+    <h3>Дисципліна 1</h3>
+     <p><input name="discipline_1" type="radio" value="SP"> Системне програмуавння</p>
+     <p><input name="discipline_1" type="radio" value="web-design"> ВЕБ-дизайн</p>
+     <p><input name="discipline_1" type="radio" value="ips"> ІПЗ</p>
+     <p><input name="discipline_1" type="radio" value="English"> Фахова іноземна мова</p>
+     <p><input name="discipline_1" type="radio" value="testing ps"> Тестування ПЗ</p>
+    <h3 align=center>Дисципліна 2</h3>
+
+       <table align=center>
+         <tr>
+           <td><input type="checkbox" name="discipline_2" value="Computer logic"> Комп'ютерна логіка <br>
+           <input type="checkbox" name="discipline_2" value="Math"> Вища математика <br>
+           <input type="checkbox" name="discipline_2" value="Ukrainian"> Ділова укр мова <br>
+           <input type="checkbox" name="discipline_2" value="History"> Історія <br></td>
+         </tr>
+       </table>
+
+       <label for="">Ім'я:</label><br>
+        <input type="text" name="Name"><br>
+       <label for="">Прізвище:</label><br>
+        <input type="text" name="Surname"><br>
+   <label for="">Кафедра:</label><br>
+     <select name="Cathedra">
+     <option selected>КСУ
+     <option >KCM
+     <option >KIT
+     </select><br>
+      <label for="">Група</label><br>
+       <select name="Group">
+      <option selected>KC-231
+      <option >KC-233
+      <option >CП-235
+      </select><br>
+     <label for="">E-mail</label><br>
+     <input type="email" name="Email"><br>
+      <valign=top><label for="">Повідомлення</label><br>
+    <textarea name="Massage" cols="30" rows="10"></textarea> <br>
+     <input type="submit" value="Відправити" required>
+   <input type="reset" value="Очистити поля форми" />
+
+</form>
+  </body>
+</html>
